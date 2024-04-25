@@ -14,6 +14,8 @@
         }
     };
 
+    $: console.log(data);
+
 	onMount(() => {
 		const interval = setInterval(async () => {
 			await invalidateAll();
@@ -39,7 +41,7 @@
 {/if}
 
 <p>
-	The last time as of being online is <strong>{data.time}</strong>.
+	The last time as of being online is <strong>{data.date}</strong>.
 </p>
 
 <style>
